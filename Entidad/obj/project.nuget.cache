@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "t6kHCcPJThqu+ASB2K7b/5CpiZb44BVdjC0YQ1qFllhYBGEVWG78fjZ93tlF9mHh5CXGhQOKAawQCQdMK+X+Vg==",
+  "success": true,
+  "projectFilePath": "F:\\HotelNeruda-master\\Entidad\\Entidad.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Pc\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
