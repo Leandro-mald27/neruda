@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Hotel_Neruda.Models;
 using Datos;
-namespace Parcial2.Controllers
+namespace Hotel_Neruda.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

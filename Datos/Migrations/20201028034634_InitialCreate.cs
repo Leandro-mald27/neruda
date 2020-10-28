@@ -33,8 +33,8 @@ namespace Datos.Migrations
                 {
                     Codigo = table.Column<string>(nullable: false),
                     Tipo = table.Column<string>(nullable: true),
-                    Numero_Habitacio = table.Column<int>(nullable: false),
-                    Precio = table.Column<double>(nullable: false),
+                    Numero_Habitacio = table.Column<string>(nullable: true),
+                    Precio = table.Column<string>(nullable: true),
                     Caracteristica = table.Column<string>(nullable: true),
                     Numero_de_Piso = table.Column<string>(nullable: true)
                 },

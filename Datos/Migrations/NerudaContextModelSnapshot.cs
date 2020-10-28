@@ -66,14 +66,14 @@ namespace Datos.Migrations
                     b.Property<string>("Caracteristica")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Numero_Habitacio")
-                        .HasColumnType("int");
+                    b.Property<string>("Numero_Habitacio")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Numero_de_Piso")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Precio")
-                        .HasColumnType("float");
+                    b.Property<string>("Precio")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Tipo")
                         .HasColumnType("nvarchar(max)");

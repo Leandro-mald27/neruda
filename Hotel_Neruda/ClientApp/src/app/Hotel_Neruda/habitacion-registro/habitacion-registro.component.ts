@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HabitacionService } from 'src/app/services/habitacion.service';
 import { Habitacion } from '../models/habitacion';
 
 @Component({
@@ -8,15 +9,27 @@ import { Habitacion } from '../models/habitacion';
 })
 export class HabitacionRegistroComponent implements OnInit {
   habitacion: Habitacion;
+  
 
-  constructor() { }
+  constructor(private habitacionService:HabitacionService) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
     this.habitacion = new Habitacion();
+    
   }
 
-  add():void {
+  add(){
+    this.habitacionService.post(this.habitacion).subscribe(p => {
 
+      if (p != null) {
+      
+      alert('Habitacion Registrado!');
+      
+      this.habitacion = p;
+      
+      }
+      
+      });
   }
 
 }

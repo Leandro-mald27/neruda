@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HabitacionService } from 'src/app/services/habitacion.service';
+import { Habitacion } from '../models/habitacion';
 
 @Component({
   selector: 'app-habitacion-consulta',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HabitacionConsultaComponent implements OnInit {
 
-  constructor() { }
+  habitaciones: Habitacion[]; 
+  searchText: string;
+  constructor(private habitacionService:HabitacionService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.get();
   }
-
+  get(){
+    this.habitacionService.get().subscribe(result=>{
+      this.habitaciones=result;
+    });
+  }
 }
